@@ -14,7 +14,7 @@
 - Firefox [火狐商店](https://addons.mozilla.org/zh-CN/firefox/addon/styl-us)
 - 其他 [cn.bing.com/search?q=stylus](https://cn.bing.com/search?q=stylus)
 
-2. [点击此处安装或更新](https://github.com/xiaofeiTM233/bilibili-activity-theme/raw/main/index.user.css) or [前往UserStyles.world 安装](https://userstyles.world/style/11994/bing-beautification)
+2. [点击此处安装或更新](https://github.com/YsMiliter/Bing_Beautification_Stylus/blob/main/index.user.css) or [前往UserStyles.world 安装](https://userstyles.world/style/11994/bing-beautification)
 
 ## 效果
 
