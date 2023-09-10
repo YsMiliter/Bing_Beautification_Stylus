@@ -1,0 +1,162 @@
+/* ==UserStyle==
+@name         Bing搜索美化
+@version      20230910.15.28
+@namespace    userstyles.world/user/YsMilit
+@description  适用于深色模式下的Bing搜索页，添加背景图片，透明支持
+@author       YsMilit
+@license      CC 4.0
+==/UserStyle== */
+
+@-moz-document url-prefix("https://cn.bing.com/"), url-prefix("https://www.bing.com/"), url-prefix("https://bing.com/") {
+/*Bing美化*/
+/*背景图片*/
+body {
+	background-image: url(https://webstatic.mihoyo.com/upload/static-resource/2021/11/08/55ccd259cca4f64ae81f2d113a153bae_8366165624319984079.png);
+	/*此处自定义壁纸*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+/*搜索结果美化*/
+#b_results > li {
+	background-color: rgba(240, 236, 236, .8);
+	border-radius: 20px;
+}
+/*搜索标题美化*/
+h2 {
+	font-weight: 200;
+}
+/*wiki美化*/
+#b_context .b_ans,
+#b_context #wpc_ag {
+	background: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+/*搜索栏美化*/
+#est_switch + #sb_form .b_searchboxForm,
+#est_switch + #sb_form .b_searchboxForm:hover {
+	border-top-left-radius: 24px;
+	background: rgba(0, 0, 0, 0.7);
+}
+#b_header #sw_as #sa_ul,
+#uaanswer #sw_as #sa_ul,
+#sw_as #sa_ul li:last-of-type {
+	border-radius: 0 0 24px 24px;
+	background: rgba(0, 0, 0, 0.7);
+}
+#sw_as li.pp_tile.sa_hv,
+#sw_as .sa_hv {
+	background-color: rgb(35, 38, 39, 0.7);
+}
+/*右边搜索栏优化*/
+#b_context .b_ans,
+#b_context #wpc_ag {
+	background: none;
+	background-color: rgba(240, 236, 236, .8);
+	border-radius: 20px;
+}
+/*旁搜索按钮*/
+#mfa_root .mfa_btn {
+	background-image: initial;
+	background-color: rgba(240, 236, 236, .8);
+}
+/*隐藏小冰*/
+#ev_hook {
+	background-image: initial;
+	height: 0;
+}
+.ev_talkbox_wrapper_min {
+	background-color: transparent;
+	opacity: 0;
+}
+/*调整细线*/
+#b_header {
+	border-bottom-color: rgb(0, 0, 0, 0.19);
+}
+/*视频选项卡*/
+.mc_vtvc {
+	background-color: rgb(24, 26, 27, 0.5);
+	box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px, rgb(0 0 0 / 10%) 0px 2px 3px 0px;
+}
+/*隐藏翻译广告*/
+.b_hPanel {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+/*移除Results related to*/
+.b_ans .bq_sideBleed {
+	opacity: 0;
+}
+/*优化问题答案*/
+.b_tophb .bgtopwh {
+	background-color: rgb(24, 26, 27, 0.4);
+}
+.b_tophb .bgtopgr {
+	background-color: rgb(30, 32, 33, 0.4);
+}
+.ref_multiAns .b_slidebar .slide {
+	background-color: rgb(24, 26, 27, 0.5);
+}
+/*隐藏反馈按钮*/
+#fbtop > div > a,
+#fbtop > div > a:visited {
+	color: rgb(157, 149, 136, 0);
+}
+/*优化页脚*/
+.b_footer,
+.b_footer a,
+.b_footer a:visited {
+	margin-top: 0px !important;
+}
+#b_results > .b_ans {
+	padding: 12px 20px 0;
+	padding-top: 12px;
+	padding-right: 20px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+}
+#b_results .b_ans #brsv3 h2 {
+	padding-bottom: 0;
+	font-size: 20px;
+	line-height: normal;
+	color: #202124;
+	margin-bottom: -5px;
+}
+#b_results #brsv3 .b_vList li {
+	width: 296px;
+	padding-bottom: 0;
+	margin: 4px 0;
+	display: inline-block;
+}
+/*优化顶部搜索栏*/
+.phead.phead_smallest {
+	background-color: rgba(240, 236, 236, .8);
+}
+#est_switch + #sb_form .b_searchboxForm,
+#est_switch + #sb_form .b_searchboxForm:hover {
+	border-top-left-radius: 24px;
+	background-color: rgb(246, 246, 246);
+}
+#b_header #sw_as #sa_ul,
+#uaanswer #sw_as #sa_ul,
+#sw_as #sa_ul li:last-of-type {
+	border-radius: 0 0 24px 24px;
+	background-color: rgba(240, 236, 236);
+}
+/*隐藏广告*/
+li.b_ad.b_adTop,
+li.b_ad b_adBottom,
+li.b_ad {
+	opacity: 0;
+	height: 0px !important;
+	width: 0px;
+}
+
+/*隐藏登录按钮*/
+#id_a {
+	display : none;
+}
+}
